@@ -72,6 +72,14 @@
             <img src="./images/person.png" alt="person" />
             <img src="./images/valley.png" alt="valley" />
             <img src="./images/person.png" alt="person" />
+            <img src="./images/person.png" alt="person" />
+            <img src="./images/valley.png" alt="valley" />
+            <img src="./images/person.png" alt="person" />
+            <img src="./images/valley.png" alt="valley" />
+            <img src="./images/person.png" alt="person" />
+            <img src="./images/valley.png" alt="valley" />
+            <img src="./images/valley.png" alt="valley" />
+            <img src="./images/person.png" alt="person" />
             <img src="./images/valley.png" alt="valley" />
           </div>
           <div class="dots">
@@ -147,29 +155,6 @@
     </div>
 
     <!-- --- script ---- -->
-    <script>
-      function changeBackground(imageUrl, cls) {
-        const content = document.querySelector('.content');
-        content.style.backgroundImage = `url('${imageUrl}')`;
-
-        if (cls === 'h1') {
-          const h1 = document.querySelector('.h1');
-          const h2 = document.querySelector('.h2');
-          h1.style.color = '#414f6d';
-          h2.style.color = '#b1b5be';
-          h1.style.backgroundColor = '#ffffff99';
-          h2.style.backgroundColor = 'inherit';
-        }
-
-        if (cls === 'h2') {
-          const h1 = document.querySelector('.h1');
-          const h2 = document.querySelector('.h2');
-          h1.style.backgroundColor = 'inherit';
-          h2.style.backgroundColor = '#ffffff99';
-          h2.style.color = '#414f6d';
-          h1.style.color = '#b1b5be';
-        }
-      }
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

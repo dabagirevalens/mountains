@@ -93,6 +93,15 @@ h6 {
     padding: 2em 10em;
 }
 
+.nav{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 1em 10em;
+    z-index: 99;
+}
+
 .nav,
 .sec__nav {
     display: flex;
@@ -232,14 +241,18 @@ ul li a {
 }
 
 .dot {
-    width: 4px;
-    height: 4px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #cccccc2f;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
-.dot:first-child {
+.dot.active {
     background-color: white;
+    width: 30px;
+    border-radius: 4px;
 }
 
 .climb {

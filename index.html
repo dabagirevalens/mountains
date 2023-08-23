@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOSANGELES MOUNTAINS</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="hero">
+        <div class="nav">
+          <div class="logo">
+            <img src="./images/logo.png" alt="logo" />
+          </div>
+          <div class="items">
+            <ul>
+              <li>
+                <a href="">01. HISTORY</a>
+              </li>
+              <li>
+                <a href="">02. TEAM</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="title">
+          <h1>
+            LOSANGELES
+            <span class="sec">MOUNTAINS</span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- nav -->
+
+      <div class="sec__nav">
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo" />
+          <div class="name">
+            <p>LOSANGELES</p>
+            <p class="sec">MOUNTAINS</p>
+          </div>
+        </div>
+        <div class="items">
+          <ul>
+            <li>
+              <a href="">01. HISTORY</a>
+            </li>
+            <li>
+              <a href="">02. TEAM</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HISTORY  -->
+
+      <div class="history">
+        <div class="history__title">
+          <h1>01</h1>
+          <span>HISTORY</span>
+        </div>
+        <div class="history__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          omnis deserunt error nihil! Inventore illum unde incidunt excepturi?
+          Mollitia amet veritatis in ad doloremque autem quo necessitatibus
+          repellendus dignissimos atque.
+        </div>
+        <div class="images__layout">
+          <div class="images__imgs">
+            <img src="./images/person.png" alt="person" />
+            <img src="./images/valley.png" alt="valley" />
+            <img src="./images/person.png" alt="person" />
+            <img src="./images/valley.png" alt="valley" />
+          </div>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+
+          <div class="climb">
+            <div class="history__title">
+              <h1>02</h1>
+              <span>CLIMB</span>
+            </div>
+            <span class="des">
+              Voluptatum, error recusandae fuga aliquid quasi totam, laboriosam
+              provident dignissimos mollitia magni commodi. Unde modi incidunt
+              ipsam laudantium quos minus laborum enim.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer  -->
+      <div class="footer">
+        <div class="data">
+          <div class="actions">
+            <h5 class="h1" onclick="changeBackground('/images/m1.png', 'h1')">
+              MOUNTAIN1
+            </h5>
+            <h5 class="h2" onclick="changeBackground('/images/m2.png', 'h2')">
+              MOUNTAIN2
+            </h5>
+          </div>
+          <div class="content">
+            <div class="box__data">
+              <h2>SCHEDULE</h2>
+              <div class="more">
+                <div class="layer__one">
+                  <div class="data__content">
+                    <span>25 Nov 2016</span>
+                    <span>Vestibulum viverra</span>
+                  </div>
+                  <div class="data__content">
+                    <span>28 Nov 2016</span>
+                    <span>Vestibulum viverra</span>
+                  </div>
+                </div>
+                <div class="data__content">
+                  <span>18 Dec 2016</span>
+                  <span>Vestibulum viverra</span>
+                </div>
+                <div class="data__content">
+                  <span>7 Jan 2017</span>
+                  <span>Vestibulum viverra</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="sec__nav">
+            <div class="logo">
+              <img src="./images/logo.png" alt="logo" />
+              <div class="name">
+                <p>LOSANGELES</p>
+                <p class="sec">MOUNTAINS</p>
+              </div>
+            </div>
+            <div class="items">COPYRIGHT 2016. ALL RIGHTS RESERVED.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- script ---- -->
+    <script>
+      function changeBackground(imageUrl, cls) {
+        const content = document.querySelector('.content');
+        content.style.backgroundImage = `url('${imageUrl}')`;
+
+        if (cls === 'h1') {
+          const h1 = document.querySelector('.h1');
+          const h2 = document.querySelector('.h2');
+          h1.style.color = '#414f6d';
+          h2.style.color = '#b1b5be';
+          h1.style.backgroundColor = '#ffffff99';
+          h2.style.backgroundColor = 'inherit';
+        }
+
+        if (cls === 'h2') {
+          const h1 = document.querySelector('.h1');
+          const h2 = document.querySelector('.h2');
+          h1.style.backgroundColor = 'inherit';
+          h2.style.backgroundColor = '#ffffff99';
+          h2.style.color = '#414f6d';
+          h1.style.color = '#b1b5be';
+        }
+      }
+    </script>
+  </body>
+</html>
